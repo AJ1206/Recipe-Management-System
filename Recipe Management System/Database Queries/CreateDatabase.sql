@@ -4,7 +4,7 @@ USE recipe;
 
 CREATE TABLE recipes (
 	recipeid INT AUTO_INCREMENT PRIMARY KEY,
-    recipename VARCHAR(45) NOT NULL UNIQUE,
+    recipename VARCHAR(45) NOT NULL UNIQUE, 
     instructions TEXT,
     cookingtime DOUBLE(5,2),
     CONSTRAINT unique_recipename UNIQUE (recipename)
